@@ -23,11 +23,11 @@ with open(path + fileName) as file:
         	'stopName' : stopName,
         	'stopDesc' : stopDesc,
         	'latitude' : latitude,
-        	'longitude' : longitude
+        	'longitude' : longitude,
         }
         
         jsonData.append(newData)
         
-with open(path + 'busData.json', 'w') as outfile:  
+with open(path + 'busStopData.json', 'w') as outfile:  
     json.dump(jsonData, outfile)
         
